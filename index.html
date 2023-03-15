@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="./script.js" type="module"></script>
+  <script src="./Sorting.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.4/build/global/luxon.min.js"></script>
+
+  <div class="Table" style="display: block">
+    <table id="DTable">
+      <thread class="TableHead">
+        <tr class="TableHeaderRow">
+          <th> <button type="button" id="FilterByID"> ID </button> </th>
+          <th> <button type="button" id="FilterByName"> Name </button> </th>
+          <th> <button type="button" id="FilterBySlug"> Slug </button> </th>
+          <th> Email </th>
+          <th> <button type="button" id="FilterByTime"> Date Time </button> </th>
+          <th> <button type="button" id="FilterByAgree"> Agree </button> </th>
+          <th> <button type="button" id="FilterBySize"> Size </button> </th>
+          <th> Address </th>
+        </tr>
+      </thread>
+    </table>
+    <script type="module">
+      import {AddAllRows} from './script.js';
+      window.addAllRows = AddAllRows;
+      window.onload = AddAllRows();
+    </script>
+
+  </div>
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
